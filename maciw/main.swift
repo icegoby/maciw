@@ -213,29 +213,7 @@ struct Maciw: ParsableCommand {
                 return
             }
 
-            switch curChan.channelBand {
-            case CWChannelBand.band2GHz:
-                band = 2
-            case CWChannelBand.band5GHz:
-                band = 5
-            case CWChannelBand.band6GHz:
-                band = 6
-            default:
-                band = 0
-            }
-            switch curChan.channelWidth {
-            case CWChannelWidth.width20MHz:
-                chanwidth = 20
-            case CWChannelWidth.width40MHz:
-                chanwidth = 40
-            case CWChannelWidth.width80MHz:
-                chanwidth = 80
-            case CWChannelWidth.width160MHz:
-                chanwidth = 160
-            default:
-                chanwidth = 0
-            }
-            print("set to band \(band), chan \(chan), chanwisth \(chanwidth)")
+            print("set to \(curChan.ToStr())")
         }
     }
 }
