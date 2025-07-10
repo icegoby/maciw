@@ -6,15 +6,21 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2835D37A2E1F467E00F5F184 /* maciw in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2835D3702E1F43AA00F5F184 /* maciw */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2835D37D2E1F48DB00F5F184 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 2835D37C2E1F48DB00F5F184 /* ArgumentParser */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		2835D36E2E1F43AA00F5F184 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			buildActionMask = 12;
+			dstPath = /Users/hmorioka/bin;
 			dstSubfolderSpec = 0;
 			files = (
+				2835D37A2E1F467E00F5F184 /* maciw in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -35,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2835D37D2E1F48DB00F5F184 /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +84,7 @@
 			);
 			name = maciw;
 			packageProductDependencies = (
+				2835D37C2E1F48DB00F5F184 /* ArgumentParser */,
 			);
 			productName = maciw;
 			productReference = 2835D3702E1F43AA00F5F184 /* maciw */;
@@ -106,6 +114,9 @@
 			);
 			mainGroup = 2835D3672E1F43AA00F5F184;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2835D37B2E1F48DB00F5F184 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2835D3712E1F43AA00F5F184 /* Products */;
 			projectDirPath = "";
@@ -285,6 +296,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2835D37B2E1F48DB00F5F184 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser?ref=blog.personal-factory.com";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2835D37C2E1F48DB00F5F184 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2835D37B2E1F48DB00F5F184 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2835D3682E1F43AA00F5F184 /* Project object */;
 }
